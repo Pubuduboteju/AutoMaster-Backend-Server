@@ -28,3 +28,41 @@ Run these commands to run the backend server
 3.	mvn spring-boot:run
 ```
 now the backend server is running
+
+## Account Creating 
+**Admin Account**
+
+In order to create an admin account in the system (In order to get admin privileges), you need to follow below steps:
+1.	Open Postman application
+2.	Set it to POST and give the url as: http://localhost:8081/api/auth/signup
+
+3.	Set the JSON body as follow for admin account and hit the button Send
+```
+{
+	"name" : "Admin",
+	"username" : "admin",
+	"email" : "<admin email>",
+	"role": [
+		"admin"
+	],
+	"password" : "<admin password>"
+}
+```
+4.	Set the JSON body as follow for superAdmin account and hit the button Send
+```
+{
+	"name" : "SuperAdmin",
+	"username" : "superAdmin",
+	"email" : "<superAdmin email>",
+	"role": [
+		"admin",
+		"pm",
+		"user"
+	],
+	"password" : "<super admin password>"
+}
+```
+**User Account**
+
+Basic functionalities and services of Automaster vehicle consultancy application you can get without registering in the system. But in order to get a full comprehensive consultancy service, you need to have get registered yourself in the system by creating an account.
+Any vehicle user can get theirself registered in the system without any trouble just by giving their personal information and creating an account in Automaster vehicle consultancy application.
