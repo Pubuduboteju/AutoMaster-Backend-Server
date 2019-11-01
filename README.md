@@ -65,4 +65,5 @@ In order to create an admin account in the system (In order to get admin privile
 **User Account**
 
 Basic functionalities and services of Automaster vehicle consultancy application you can get without registering in the system. But in order to get a full comprehensive consultancy service, you need to have get registered yourself in the system by creating an account.
+
 Any vehicle user can get theirself registered in the system without any trouble just by giving their personal information and creating an account in Automaster vehicle consultancy application.
