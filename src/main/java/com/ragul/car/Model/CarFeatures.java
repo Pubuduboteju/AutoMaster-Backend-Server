@@ -1,12 +1,13 @@
-package com.ragul.car.dto;
+package com.ragul.car.Model;
 
-import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-public class CarRecommenderDto implements Serializable {
-     private Double carValue;
-
-     private String careModel;
-
+@Entity
+@Table(name = "carFeatures")
+public class CarFeatures {
+    @Id
     private String vehicleModel;
     private String make;
     private String bodyType;
@@ -20,22 +21,6 @@ public class CarRecommenderDto implements Serializable {
     private int sportyDesign;
     private int prestige;
     private int marketValue;
-
-    public Double getCarValue() {
-        return carValue;
-    }
-
-    public void setCarValue(Double carValue) {
-        this.carValue = carValue;
-    }
-
-    public String getCareModel() {
-        return careModel;
-    }
-
-    public void setCareModel(String careModel) {
-        this.careModel = careModel;
-    }
 
     public String getVehicleModel() {
         return vehicleModel;
